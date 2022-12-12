@@ -152,10 +152,10 @@ class Hook {
         XposedBridge.log("Hi Yuuki")
         XposedBridge.log("Load: "+lpparam.packageName)
 
-        if (lpparam.packageName == "com.miHoYo.GenshinImpact") {
+        if (lpparam.packageName == "com.mihoyu.Tianli") {
             XposedBridge.log("found it")
             EzXHelperInit.initHandleLoadPackage(lpparam) // idk what this?
-            server = "https://genshin.ps.yuuki.me" // Change this according to your server
+            server = "https://login.casks.me" // Change this according to your server
             tryhook()       
         }
 
@@ -177,9 +177,9 @@ class Hook {
     }
 
     private fun enter(){
-        Toast.makeText(activity, "Welcome to YuukiPS", Toast.LENGTH_LONG).show()
-        Toast.makeText(activity, "Don't forget to join our discord.yuuki.me", Toast.LENGTH_LONG).show()
-        Toast.makeText(activity, "Thanks chengecu and Z3RO", Toast.LENGTH_LONG).show()
+        Toast.makeText(activity, "欢迎来到天理尝蛆", Toast.LENGTH_LONG).show()
+        Toast.makeText(activity, "本服务器完全免费，如果您是购买得到的本服，那么就代表您被骗了，请立即申请退款并举报投诉卖家。", Toast.LENGTH_LONG).show()
+        Toast.makeText(activity, "天理尝蛆祝您游戏愉快。", Toast.LENGTH_LONG).show()
     }
 
     // Bypass HTTPS
